@@ -1,0 +1,82 @@
+body {
+	background-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
+	background-repeat: repeat;
+	background-color: white;
+	color: #404040;
+	font-family: "Georgia";
+	margin-left: 15%;
+	margin-right: 15%;
+}
+p:first-letter {
+	font-size: 1.5em;
+}
+.title, .content-title {
+	color: #A4A400;
+	background-color: #F0F0F0;
+	text-decoration: underline;
+	letter-spacing: 0.2em;
+}
+.title {
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 22pt;
+	text-align: center;
+}
+.content-title {
+	font-family: "Verdana";
+	font-weight: normal;
+	font-size: 18pt;
+	text-align: left;
+}
+.more ul {
+	list-style: none;
+}
+
+.more li {
+	float: left;
+	margin: 20pt;
+	display: inline;
+	border:1pt solid #CCC;
+}
+.more img {
+	width: 150pt;
+	height: 130pt;
+	padding: 5pt;
+	border: 0;
+	display: block;
+}
+.name {
+	line-height: 20pt;
+	color: #666;
+	display: block;
+	text-align: center;
+}
+a:hover {
+	color:#A4A400;
+}
+.header {
+	font-size: 15pt;
+	text-align: center;
+}
+.center {
+	font-style: italic;
+}
+#lemon {
+	text-align: center;
+}
+#lemon:hover {
+	opacity: 0.8;
+}
+#lemon a{
+	font-size: 15pt;
+	font-style: normal;
+}
+#more {
+	text-align: center;
+}
+#come {
+	padding-top: 220pt;
+	padding-bottom: 10pt;
+	font-size: 20pt;
+	text-align: center;
+}
