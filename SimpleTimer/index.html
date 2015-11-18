@@ -1,0 +1,48 @@
+<!-- Author bt Paul Yan on 18th Nov 2015 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SimpleTimer</title>
+		<meta charset="utf-8">
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		<link rel="stylesheet" type="text/css" href="css/timer.css">
+		<script type="text/javascript" src="js/timer.js"></script>
+	</head>
+	<body>
+		<div class="title" id="state">
+			请输入或选择时间点击开始按钮
+		</div>
+		<div class="timer-body">
+			<div class="operation">
+				<div class="input-area">
+					<div>
+						分钟:
+						<input type="text" id="minute-input" class="input-hint" value="请输入分钟">
+					</div>
+					<div>
+						秒钟:
+						<input type="text" id="second-input" class="input-hint" value="请输入秒钟">
+					</div>
+				</div>
+				<div class="button-area" id="button-area">
+					<button class="button" value="10">10秒</button>
+					<button class="button" value="30">30秒</button>
+					<button class="button" value="60">60秒</button>
+					<button id="begin" class="button" value="begin">开始</button>
+					<button id="pause" class="button" value="pause">暂停</button>
+					<button id="clear" class="button" value="clear">清零</button>
+				</div>
+			</div>
+			<div class="display">
+				<div class="toend">离结束还有:</div>
+				<div class="onscreen">
+					<input id="minute-output" class="output" value="0">
+					<span>分</span>
+					<input id="second-output" class="output" value="0"></input>
+					<span>秒</span>
+				</div>
+				<div>小提示：在计时过程中，想要重新开始新计时需要点击清零或者时间到计时结束。</div>
+			</div>
+		</div>
+	</body>
+</html>

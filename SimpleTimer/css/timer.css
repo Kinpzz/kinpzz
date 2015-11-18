@@ -1,0 +1,86 @@
+html {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.title {
+	height: 100px;
+	text-align: center;
+	font-size: 50px;
+	line-height: 2;
+}
+
+.timer-body {
+	border-radius: 30px;
+	height: 500px;
+	width: 800px;
+	border: 2px solid black;
+	margin: auto;
+}
+
+.operation {
+	height: 30%;
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+.operation .input-area {
+	float: left;
+	width: 35%;
+	height: 100%;
+}
+.input-area div {
+	width: 100%;
+	height: 50%;
+	font-size: 25px;
+	text-align: center;
+	line-height: 2.8;
+}
+.input {
+	width: 30%;
+	height: 60%;
+	font-size: 20px;
+	text-align: center;
+}
+
+.input-hint {
+	width: 30%;
+	height: 60%;
+	font-size: 15px;
+	text-align: center;
+	color: gray;
+}
+.operation .button-area {
+	padding-top: 10px;
+	float: left;
+	width: 65%;
+	height: 95%;
+	text-align: center;
+	line-height: 4.3;
+}
+.button-area button {
+	height: 35%;
+	width: 30%;
+	font-size: 25px;
+}
+
+.display {
+	height: 62.5%;
+	width: 100%;
+	text-align: center;
+}
+.display .toend {
+	height: 25%;
+	width: 45%;
+	font-size: 45px;
+	line-height: 2.5;
+}
+.display .onscreen {
+	height: 70%;
+	font-size: 55px;
+}
+
+.output {
+	width: 220px;
+	height: 180px;
+	text-align: right;
+	font-size: 180px;
+	border: 0;
+}
