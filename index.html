@@ -1,66 +1,26 @@
-<!DOCTYPE HTML>
-<!-- Author by Yan Pengxiang, 14331327, group 19, on 2015.10.14 -->
+<!-- Author by Yan Pengxiang 14331327,group 19 on 20th Nov -->
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta name="Author" content="Paul">
-		<meta name="Description" content="dessert menu">
+		<title>Puzzle Game</title>
 		<meta charset="utf-8">
-		<title>Dessert Menu</title>
-		<link rel="stylesheet" type="text/css" href="home.css">
-		<link rel="shortcut icon" href="http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif">
+		<link rel="stylesheet" type="text/css" href="css/puzzle.css">
+		<script type="text/javascript" src="js/puzzle.js"></script>
 	</head>
 	<body>
-		<!-- The first title is standed by title-->
-		<h1 class="title">Dessert Recipe</h1>
-		<!-- the header part : tell the goal of the website -->
-		<div class="header">
-			<p>We are focused on teaching people to make some desserts on themselves.</p>
+		<!-- 标题区 -->
+		<div class="title" id="title-bar">Puzzle Game</div>
+		<!-- 信息区 -->
+		<div class="info" id="info-bar">Use + or - to change difficulty and start
 		</div>
-		<!-- The second title in the content is standed by content-title -->
-		<h2 class="content-title">TODAY'S DESSERT</h2>
-
-		<!-- The content part -->
-		<div class="content">
-			<!-- The center part of the content tells today's topic -->
-			<div class="center">
-				<p>Today, we are going to know how to make a delicious <a href="pie.html"><strong>Grandma's Lemon Meringue Pie</strong></a>
-				<div id="lemon">
-					<a href="pie.html"><img src="http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie.jpg" alt="lemon meringue pie">
-				</a>
-				</div>
-				<p> meringue pie is a type of baked pie, usually served for dessert, made with a crust usually made of shortcrust pastry, lemon custard filling and a fluffy meringue topping. Lemon meringue pie is prepared with a bottom pie crust, with the meringue directly on top of the lemon filling. No upper crust is used, as in a cherry pie.</p>
-			</div>
-			<h2 class="content-title">WAIT FOR MORE: </h2>
-
-			<!-- Introduction of more dessert -->
-			<div class="more">
-				<ul>
-					<li>
-						<img src="http://www.rusticgardenbistro.com/wp-content/uploads/www.rusticgardenbistro.com-Strawberry-Pie-Square1.jpg" alt="Strawberry Pie">
-						<a href="#" class="name">Strawberry Pie</a>
-					</li>
-					<li>
-						<img src="http://media.foodnetwork.ca/recipetracker/dmm/_/B/_Blue_Ribbon__Apple_Pie_001.jpg" alt="Apple pie">
-						<a href="#" class="name">Apple Pie</a>
-					</li>
-					<li>
-						<img src="https://www.foodland.com/files/imagecache/530x600/bananacreampie.jpg" alt="Banana Pie">
-						<a href="#" class="name">Banana Pie</a>
-					</li>
-				</ul>
-			</div>
-			<div id="come">
-				<p>Will coming soon!</p>
-			</div>
+		<!-- 游戏界面区 -->
+		<div id="game-body"></div>
+		<!-- 按键区 -->
+		<div class="button-area">
+			<button id="easy">-</button>
+			<button id="hard">+</button>
+			<button id="start">Start</button>
 		</div>
-		<!-- Content part ends here -->
-		
-		<!-- The footer of the page -->
-		<div class="footer">
-			<h2 class="content-title">LINKS</h2>
-			<a href="https://www.google.com.hk/search?q=desserts+recipe.">Search for about desserts recipe</a><br />
-			<a href="http://validator.w3.org/check/referer"><img src="html.png" alt="W3C HTML"></a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="css.gif" alt="W3C CSS"></a>
-		</div>
+		<div class="info" id="step-num"></div>
 	</body>
 </html>
