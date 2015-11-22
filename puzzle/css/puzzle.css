@@ -1,0 +1,107 @@
+html {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+}
+/* ---- 标题区域 ----*/
+.title {
+	width: 250px;
+	height: 60px;
+	font-size: 50px;
+	position: absolute;
+	left: 510px;
+	top: 20px;
+	box-shadow: 2px 2px 2px 2px gray;
+	background-color: rgb(133,161,81);
+	color: white;
+}
+/* ---- 信息区域 ---- */
+#info-bar {
+	width: 650px;
+	left: 310px;
+	top: 100px;
+	background-color: rgb(252,227,134);
+	color: rgb(143,90,24);
+	box-shadow: 1px 1px 1px 1px gray;
+}
+.info {
+	height: 40px;
+	font-size: 30px;
+	position: absolute;
+}
+#step-num {
+	width: 200px;
+	left: 540px;
+	top: 575px;
+}
+/* ---- 按键区域 ---- */
+.button-area {
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	left: 381px;
+	top: 520px;
+
+}
+.button-area button {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 10px;
+	background-color: rgb(133,161,81);
+	color: white;
+	border: 0;
+	font-size: 25px;
+	box-shadow: 2px 2px 2px 2px gray;
+}
+#start {
+	width: 120px;
+}
+
+/*---- 拼图样式 ----*/
+/*拼图的共特特点*/
+.puzzle {
+	border: 1px solid gray;
+	position: absolute;
+	background-size: 352px 352px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+}
+/* 整片图片区域 */
+#game-body {
+	height:352px;
+	width: 352px;
+	position: absolute;
+	left: 458px;
+	top: 160px;
+}
+/*规格为4x4的拼图*/
+.puzzle-4 {
+	height: 85px;
+	width: 85px;
+	background: url('../image/level_one.png');
+}
+/*规格为5x5的拼图*/
+.puzzle-5 {
+	height: 67.4px;
+	width: 67.4px;
+	background: url('../image/level_two.jpg');
+}
+/*规格为6x6的拼图*/
+.puzzle-6 {
+	height: 55.5px;
+	width: 55.5px;
+	background: url('../image/level_three.jpg');
+}
+/*规格为7x7的拼图*/
+.puzzle-7 {
+	height: 47.2px;
+	width: 47.2px;
+	background: url('../image/level_four.jpg');
+}
+/*规格为8x8的拼图*/
+.puzzle-8 {
+	height: 41px;
+	width: 41px;
+	background: url('../image/level_five.jpg');
+}
