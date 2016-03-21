@@ -1,0 +1,865 @@
+/* container */
+#container {
+    font-family: 'Microsoft YaHei', sans-serif;
+
+    position: absolute;
+    top: 0;
+    /* right must be added */
+    right: 0;
+    left: 0;
+
+    min-width: 1280px;
+    min-height: 2000px;
+}
+#container a {
+    text-decoration: none;
+}
+
+/* --- header --- */
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+}
+/* -- navigation -- */
+
+/* - nav-logo - */
+#nav-logo::before {
+    position: absolute;
+    top: -5px;
+    left: -40px;
+
+    width: 30px;
+    height: 30px;
+
+    content: url(../images/nav-logo.png);
+}
+
+#nav-logo {
+    font-family: SimHei, sans-serif;
+    font-size: 21px;
+
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+#nav-logo p {
+    margin: 0;
+}
+
+/* - nav list - */
+#nav {
+    position: absolute;
+    top: 0;
+    right: 40px;
+
+    width: 670px;
+    height: 100%;
+}
+.tag {
+    line-height: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 12px;
+}
+.tag li {
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: 60px;
+    height: 100%;
+    margin: 0 20px 0 20px;
+
+    text-align: center;
+}
+.tag li a {
+    margin-top: 15px;
+
+    color: rgb(140,140,140);
+}
+/* login button */
+#login::before {
+    position: absolute;
+    top: 17px;
+    right: 73px;
+
+    content: url(../images/nav-user.png);
+}
+#login {
+    width: 40px;
+
+    color: rgb(222,84,74);
+}
+
+/* -- banner -- */
+
+#banner {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+    height: 690px;
+
+    background-image: url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-inside {
+    font-weight: 200;
+
+    position: absolute;
+    left: 125px;
+
+    color: white;
+}
+#banner .title {
+    font-size: 60px;
+
+    top: 228px;
+    left: 115px;
+}
+#banner .description {
+    font-size: 21px;
+
+    top: 363px;
+}
+#banner .begin {
+    font-size: 30px;
+    line-height: 2;
+
+    top: 485px;
+
+    display: block;
+
+    width: 332px;
+    height: 64px;
+
+    text-align: center;
+
+    border-radius: 1px;
+    background-color: rgb(232,70,68);
+}
+
+
+/* -- content -- */
+
+#content {
+    position: absolute;
+    top: 747px;
+    left: 0;
+
+    width: 100%;
+}
+
+/*- our goal -*/
+#our-goal {
+    width: 100%;
+    height: 252px;
+
+    text-align: center;
+}
+#our-goal-wrapper {
+    line-height: 1.2;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 24%;
+    height: 187px;
+}
+#our-goal-wrapper img {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+#our-goal-wrapper p {
+    font-family: SimHei, sans-serif;
+    font-size: 14px;
+
+    margin: 0;
+    padding: 0 0 19px 0;
+
+    color: rgb(108,108,108);
+    border-right: 2px solid rgb(184,184,184);
+}
+
+#our-goal #our-goal-without-right-border {
+    border-right: 0;
+}
+#question-banner {
+    width: 100%;
+    height: 381px;
+
+    text-align: center;
+
+    background-color: rgb(237,237,237);
+}
+#question-logo {
+    padding-top: 91px;
+}
+#question-banner-title {
+    font-family: SimHei, sans-serif;
+    font-size: 54px;
+    font-weight: 100;
+    line-height: 3;
+
+    margin: 0;
+
+    color: rgb(129,122,123);
+}
+#activity-search {
+    width: 100%;
+    height: 339px;
+
+    text-align: center;
+
+    color: white;
+    background-image: url(../images/search-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#activity-search-title {
+    font-size: 21px;
+
+    margin: 0;
+    padding-top: 52px;
+}
+#activity-search-description {
+    font-size: 12px;
+
+    margin-top: 18px;
+}
+
+.position-select {
+    position: relative;
+    top: -128px;
+
+    display: inline-block;
+
+    width: 238px;
+    height: 37px;
+    margin: 0 15px 0 15px;
+
+    background-color: white;
+}
+.position-select-input {
+    font-size: 12px;
+
+    box-sizing: border-box;
+    width: 238px;
+    height: 37px;
+    padding-left: 12px;
+}
+.position-select-input-province {
+    border: 1px solid rgb(190,78,74);
+    border-bottom-width: 0;
+}
+.position-select-province {
+    top: 35px;
+}
+.position-select-button {
+    font-size: 14px;
+    line-height: 2.4;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 238px;
+    height: 37px;
+
+    color: white;
+    background-color: rgb(190,78,74);
+}
+.position-select-choice {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.position-select-province-list {
+    display: block;
+
+    box-sizing: border-box;
+    width: 238px;
+    height: 173px;
+    padding: 0;
+
+    text-align: left;
+
+    border: 1px solid rgb(190,78,74);
+    border-top-width: 0;
+    background-color: rgb(223,223,223);
+}
+.position-select-province-list > li {
+    font-size: 12px;
+    line-height: 2.5;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 236px;
+    height: 26px;
+    padding: 0;
+
+    color: rgb(110,110,110);
+    background-color: rgb(223,223,223);
+}
+.position-select-province-list > li::before {
+    padding-right: 10px;
+    padding-left: 9px;
+
+    content: url(../images/chosen.png);
+
+    opacity: 0;
+}
+#activity-picture {
+    width: 100%;
+    height: 605px;
+
+    text-align: center;
+
+    background-color: rgb(247,247,247);
+}
+#activity-picture > ul {
+    margin: 0;
+}
+.activity-wrapper {
+    display: inline-block;
+
+    width: 220px;
+    height: 395px;
+    margin: 101px 10px 110px 10px;
+    padding: 0;
+}
+.activity-wrapper .activity-wrapper-img {
+    box-sizing: border-box;
+    width: 220px;
+    height: 338px;
+    padding-top: 12px;
+
+    border: 1px solid rgb(239,239,239);
+    border-bottom-width: 0;
+    background-color: white;
+}
+.activity-wrapper .activity-wrapper-up {
+    border-bottom-width: 1px;
+}
+.activity-title-small {
+    font-size: 14px;
+
+    margin: 13px 0 0 0;
+
+    color: rgb(45,45,45);
+}
+.activity-title-big {
+    font-size: 24px;
+
+    margin: 0;
+
+    color: rgb(45,45,45);
+}
+.activity-title-big span {
+    text-indent: 10px;
+    letter-spacing: 30px;
+}
+.activity-description {
+    font-size: 12px;
+
+    margin: 7px 0 8px 0;
+
+    color: rgb(130,130,130);
+}
+#more-about-us {
+    width: 1280px;
+    height: 1087px;
+    margin: 0 auto 0 auto;
+}
+#recent-activity {
+    position: relative;
+
+    float: left;
+
+    width: 852px;
+    height: 561px;
+
+    color: white;
+    background-image: url(../images/model1.png);
+    background-repeat: no-repeat;
+}
+#recent-activity .title {
+    margin: 0;
+
+    text-align: center;
+}
+.recent-activity-subtitle {
+    font-size: 49px;
+    font-weight: 200;
+
+    padding: 120px 0 0 0;
+}
+.recent-activity-title {
+    font-size: 158px;
+    line-height: .8;
+}
+.recent-activity-info {
+    font-size: 22px;
+    line-height: 2;
+
+    width: 165px;
+    height: 80px;
+    margin: 0 auto 0 auto;
+    padding-top: 30px;
+
+    text-align: left;
+}
+.triangle {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    border-width: 16px 28px;
+    border-style: solid;
+    border-color: transparent;
+}
+#recent-activity-triangle {
+    top: 264px;
+    left: 795px;
+
+    border-right-color: white;
+}
+#more-about-us .info-option {
+    float: right;
+
+    width: 425px;
+    height: 561px;
+}
+.info-option-title {
+    font-size: 20px;
+
+    margin: 0;
+    padding-top: 165px;
+
+    text-align: center;
+}
+.info-option-title .info-number {
+    color: rgb(229,70,69);
+}
+.info-option-description {
+    font-size: 12px;
+    line-height: 2.5;
+
+    width: 290px;
+    margin: 16px auto 52px auto;
+
+    color: rgb(184,184,184);
+}/* style of info button */
+.info-button {
+    font-size: 21px;
+    line-height: 2;
+
+    display: block;
+
+    width: 170px;
+    height: 45px;
+    margin: 0;
+    margin: 31px auto 0 auto;
+
+    text-align: center;
+}
+
+.info-button-red {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(227,70,68);
+}
+.info-button-white {
+    color: rgb(227,70,68);
+    border: 1px solid rgb(227,70,68);
+    background-color: white;
+}
+
+.info-option .info-button {
+    font-size: 12px;
+    line-height: 2.5;
+
+    width: 104px;
+    height: 30px;
+    margin: 0 auto 0 auto;
+}
+.info-option-select {
+    margin-top: 26px;
+    padding: 0;
+
+    text-align: center;
+}
+.info-option-select li {
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid rgb(175,175,175);
+    border-radius: 50%;
+}
+.info-option-selected {
+    background-color: rgb(145,145,145);
+}
+.info-option-unselected {
+    background-color: white;
+}
+.info-part {
+    font-family: Simhei, sans-serif;
+    font-size: 21px;
+
+    float: left;
+
+    width: 425px;
+    height: 520px;
+
+    text-align: center;
+}
+.info-part p {
+    margin: 0;
+}
+#info-part-red {
+    color: white;
+    background-color: rgb(227,69,68);
+}
+#info-part-white {
+    color: black;
+    background-color: white;
+}
+.info-part-title {
+    padding-top: 175px;
+}
+#info-model {
+    position: relative;
+
+    float: right;
+
+    width: 430px;
+    height: 520px;
+
+    background-image: url(../images/model2.png);
+    background-repeat: no-repeat;
+}
+#info-model-triangle {
+    top: 252px;
+    left: 0;
+
+    border-left-color: white;
+}
+
+
+#join-us {
+    width: 1280px;
+    height: 751px;
+    margin: 0 auto 0 auto;
+}
+.join-us-title {
+    font-family: Simhei, sans-serif;
+    font-size: 21px;
+
+    padding-top: 120px;
+
+    text-align: center;
+}
+.join-us-subtitle {
+    font-size: 12px;
+
+    margin-top: 14px;
+
+    text-align: center;
+
+    color: rgb(179,179,179);
+}
+
+#join-us-rule {
+    float: left;
+
+    width: 320px;
+    height: 283px;
+    margin: 107px 38px 170px 130px;
+}
+#join-us-rule li {
+    display: block;
+}
+
+.join-us-rule-title {
+    font-family: SimHei, sans-serif;
+    font-size: 14px;
+
+    margin: 0 0 28px 0;
+
+    color: rgb(117,113,113);
+}
+.join-us-rule-description {
+    font-family: SimHei, sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+
+    margin: 0;
+
+    color: rgb(180,180,180);
+}
+.join-us-rule-more {
+    font-family: SimSun, sans-serif;
+    font-size: 12px;
+
+    display: block;
+
+    width: 100%;
+    margin-bottom: 18px;
+
+    text-align: right;
+}
+.join-us-rule-more::before {
+    margin: 6px;
+
+    content: url(../images/arrow.png);
+}
+
+#join-us-form {
+    float: left;
+
+    width: 660px;
+    height: 283px;
+    margin: 119px 0 170px 20px;
+}
+#join-us-form input {
+    box-sizing: border-box;
+    width: 312px;
+    height: 42px;
+    margin: 0 13px 14px 0;
+    padding-left: 16px;
+
+    border: 0;
+    background-color: rgb(233,233,233);
+}
+#join-us-form input::-webkit-input-placeholder,
+#join-us-form textarea::-webkit-input-placeholder {
+    color: rgb(97,97,97);
+}
+#join-us-form textarea {
+    box-sizing: border-box;
+    width: 640px;
+    height: 118px;
+    margin-bottom: 14px;
+    padding: 16px;
+
+    border: 0;
+    background-color: rgb(233,233,233);
+}
+#join-us-form .join-us-form-button {
+    font-family: Simhei, sans-serif;
+    font-size: 14px;
+
+    width: 639px;
+    height: 43px;
+}
+
+#contact {
+    width: 100%;
+    height: 360px;
+
+    text-align: center;
+
+    color: white;
+    background-color: rgb(44,47,54);
+}
+
+.contact-title {
+    font-family: Simhei, sans-serif;
+    font-size: 21px;
+
+    margin: 0;
+    padding-top: 93px;
+}
+.contact-description {
+    font-family: SimSun, sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+}
+#contact form {
+    display: block;
+
+    width: 512px;
+    height: 45px;
+    margin: 28px auto 34px auto;
+}
+
+.contact-input-email {
+    font-size: 15px;
+
+    float: left;
+
+    box-sizing: border-box;
+    width: 433px;
+    height: 43px;
+    padding-left: 10px;
+
+    border: 0;
+    background-color: white;
+}
+.contact-submit {
+    font-size: 15px;
+
+    float: left;
+
+    width: 78px;
+    height: 44px;
+
+    color: white;
+    border: 0;
+    background-color: rgb(100,103,109);
+}
+.contact-method {
+    width: 220px;
+    height: 39px;
+    margin: 17px auto 0 auto;
+    padding: 0;
+}
+.contact-method li {
+    display: inline-block;
+
+    margin: 0 10px 0 10px;
+}
+#footer {
+    font-family: Simsun, sans-serif;
+    font-size: 12px;
+
+    width: 100%;
+    height: 58px;
+
+    background-color: rgb(41,42,49);
+}
+#footer a {
+    color: white;
+}
+#footer .home-page {
+    float: left;
+
+    margin: 24px 0 13px 93px;
+}
+#footer .back-to-top {
+    float: right;
+
+    margin: 24px 40px 13px 0;
+}
+
+/* static css ends here */
+
+/* animation and some effect */
+
+/* nav */
+.nav-underline {
+    position: absolute;
+    bottom: 0;
+    left: 39px;
+
+    width: 65px !important;
+    height: 5px !important;
+
+    -webkit-transition: all .4s ease-out;
+            transition: all .4s ease-out;
+
+    background-color: rgb(222,84,74);
+}
+#nav .tag .nav-not-selected a:hover {
+    color: rgb(227,69,68);
+}
+#nav .tag .nav-selected a {
+    color: rgb(227,69,68);
+}
+
+/* 此处纯CSS实现比较复杂 使用JS可以通过改变类名实现*/
+.tag-1:hover ~ li.nav-underline {
+    left: 39px;
+}
+.tag-2:hover ~ li.nav-underline {
+    left: 142px;
+}
+.tag-3:hover ~ li.nav-underline {
+    left: 248px;
+}
+.tag-4:hover ~ li.nav-underline {
+    left: 353px;
+}
+.tag-5:hover ~ li.nav-underline {
+    left: 457px;
+}
+
+/* underline effect */
+.underline-effect {
+    width: 0;
+    height: 3px;
+    margin: 5px auto 0 auto;
+
+    -webkit-transition: all .4s ease-out;
+            transition: all .4s ease-out;
+
+    background-color: transparent;
+}
+/*nav-logo 也同时满足是 hover后面的父亲 */
+#nav-logo:hover .underline-effect {
+    width: 63px;
+
+    background-color: black;
+}
+
+#activity-search-title:hover .underline-effect {
+    width: 250px;
+
+    background-color: white;
+}
+
+#info-part-red:hover .underline-effect {
+    width: 170px;
+
+    background-color: white;
+}
+
+#info-part-white:hover .underline-effect {
+    width: 170px;
+
+    background-color: rgb(160,160,160);
+}
+
+#join-us .join-us-title:hover .underline-effect {
+    width: 180px;
+
+    background-color: rgb(230,90,80);
+}
+
+/* button effect */
+#banner .begin:hover {
+    background-color: rgb(220,50,58);
+}
+#more-about-us .info-button-red:hover {
+    background-color: rgb(220,50,58);
+}
+#more-about-us .info-button-white:hover {
+    background-color: rgb(250,250,250);
+}
+#join-us-form .join-us-form-button:hover {
+    background-color: rgb(220,220,220);
+}
+#contact .contact-submit:hover {
+    background-color: rgb(90,95,100);
+}
+
+/* search list */
+.position-select-detail-list > li:hover::before {
+    opacity: 1;
+}
+.position-select-detail-list > li:hover {
+    color: white;
+    background-color: rgb(182,69,63);
+}
